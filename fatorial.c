@@ -5,7 +5,7 @@ unsigned long long fatorial(unsigned n){
     }
     printf("descendo do indice %d\n", n);
     unsigned long long resultado = n * fatorial(n-1);
-    printf("fat[%d]: %llu\n", n, resultado);
+    printf("fat[%d]: %lld\n", n, resultado);
     if(n<=4){
     printf("subindo para o indice %d\n", n+1);
     }
@@ -17,7 +17,7 @@ int main(){
     printf("Digite a entrada: ");
     scanf("%d", &entrada);
 
-    printf("saida: %llu \n", fatorial(entrada));
+    printf("saida: %lld \n", fatorial(entrada));
 
     return 0;
 }
